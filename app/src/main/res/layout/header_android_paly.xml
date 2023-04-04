@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.soarsy.cloud.vm.AndroidPlayViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rl_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            bannerData="@{vm.bannerUrlDatas}"
+            bannerTitle="@{vm.bannerTitleDatas}"
+            app:delay_time="5000"
+            app:image_scale_type="center_crop"
+            app:indicator_drawable_selected="@mipmap/ic_banner_red"
+            app:indicator_drawable_unselected="@mipmap/ic_banner_grey"
+            app:indicator_height="9dp"
+            app:indicator_margin="3dp"
+            app:indicator_width="9dp"
+            app:is_auto_play="true"
+            app:title_height="28dp"
+            app:title_textsize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_banner_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_toRightOf="@+id/banner"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_banner_one"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                imgSource="@{vm.bannerUrlDatas.size()>0?vm.bannerUrlDatas.get(0):null}"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_banner_two"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                imgSource="@{vm.bannerUrlDatas.size()>2?vm.bannerUrlDatas.get(2):null}"
+                android:scaleType="centerCrop"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

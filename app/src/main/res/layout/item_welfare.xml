@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.soarsy.cloud.bean.GankIoDataBean.ResultBean" />
+    </data>
+
+    <ImageView
+        android:id="@+id/iv_welfare"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        imgSource="@{item.url}"
+        placeholder="@{@drawable/ic_place_welfare}"
+        android:scaleType="centerCrop" />
+
+</layout>

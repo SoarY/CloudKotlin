@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--导航栏颜色_APP主题色-->
+    <color name="colorPrimary">#CE3D3A</color>
+    <!--沉浸式状态栏颜色-->
+    <color name="colorPrimaryDark">#CE3D3A</color>
+    <!--控件选中色-->
+    <color name="colorAccent">#CE3D3A</color>
+    <!--主体文字颜色-->
+    <color name="textColorPrimary">#333333</color>
+
+    <color name="light_gray">#D1D1D1</color>
+
+    <!--tab标签栏文字的颜色-->
+    <color name="colorTabText">#585858</color>
+    <!--谈红色  用于首页调整点击变色-->
+    <color name="colorSmallRed">#FAEBEB</color>
+    <!--页面背景的颜色-->
+    <color name="color_page_bg">#F1F3F4</color>
+    <!--tab默认图标颜色-->
+    <color name="colorTabRed">#E18A88</color>
+    <!--首页item文字颜色-->
+    <color name="colorItemTitle">#999</color>
+    <!--item的5.0一下版本选择器颜色-->
+    <color name="itemLowBackground">#D9D9D9</color>
+    <!--item的水波纹颜色-->
+    <color name="itemBackground">#DD7D7D7D</color>
+    <color name="colorTitle">#666</color>
+</resources>

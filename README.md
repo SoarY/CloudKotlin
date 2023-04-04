@@ -1,2 +1,2 @@
 # CloudKt
-Cloud-Kotlin
+kotlin

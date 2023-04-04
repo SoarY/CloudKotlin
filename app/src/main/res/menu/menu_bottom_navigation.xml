@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_music"
+        android:icon="@mipmap/ic_titlebar_music"
+        app:showAsAction="always"
+        android:title="" />
+
+    <item
+        android:id="@+id/item_discover"
+        android:icon="@mipmap/ic_titlebar_discover"
+        app:showAsAction="always"
+        android:title="" />
+
+    <item
+        android:id="@+id/item_friends"
+        android:icon="@mipmap/ic_titlebar_friends"
+        app:showAsAction="always"
+        android:title="" />
+
+</menu>

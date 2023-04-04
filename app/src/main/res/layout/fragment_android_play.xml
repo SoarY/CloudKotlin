@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.soarsy.cloud.vm.AndroidPlayViewModel" />
+    </data>
+
+    <ViewSwitcher
+        viewSwitcher="@{vm.whichChild}"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            onLoadMoreListener="@{vm.onLoadMore}"
+            onRefreshListener="@{vm.onRefresh}"
+            stopRefresh="@{vm.stopRefresh}"
+            app:srlAccentColor="@color/colorPrimary"
+            app:srlPrimaryColor="@color/colorPrimary">
+
+            <com.scwang.smartrefresh.header.MaterialHeader
+                android:id="@+id/material_header_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adapter="@{vm.headerAdapter}"
+                android:scrollbars="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <include layout="@layout/inc_cloud_footer" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <com.soarsy.cloud.view.LoadingView
+            android:id="@+id/loading_view"
+            loadState="@{vm.loadState}"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewSwitcher>
+</layout>
