@@ -16,5 +16,5 @@ dependencyResolutionManagement {
         maven { url "https://jitpack.io" }
     }
 }
-rootProject.name = "Cloud-kotlin"
+rootProject.name = "CloudKt"
 include ':app'
