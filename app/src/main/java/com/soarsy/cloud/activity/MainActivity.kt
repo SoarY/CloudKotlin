@@ -15,6 +15,7 @@ import com.soarsy.cloud.constants.RouteConstants
 import com.soarsy.cloud.databinding.ActivityMainBinding
 import com.soarsy.cloud.databinding.LayoutNavigationHeaderBinding
 import com.soarsy.cloud.fragment.DiscoverFragment
+import com.soarsy.cloud.fragment.FriendsFragment
 import com.soarsy.cloud.fragment.MusicFragment
 import com.soarsy.cloud.util.ToastUtils
 
@@ -53,7 +54,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, BaseViewModel>() {
         val bottomPagerAdapter = BottomPagerAdapter(supportFragmentManager)
         bottomPagerAdapter.addFragment(MusicFragment.newInstance())
         bottomPagerAdapter.addFragment(DiscoverFragment.newInstance())
-        bottomPagerAdapter.addFragment(MusicFragment.newInstance())
+        bottomPagerAdapter.addFragment(FriendsFragment.newInstance())
         mDinding.viewPager.setOffscreenPageLimit(3)
         mDinding.viewPager.setAdapter(bottomPagerAdapter)
 

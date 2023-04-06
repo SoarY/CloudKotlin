@@ -20,7 +20,7 @@ abstract class BaseAdapter<T, B : ViewDataBinding>: RecyclerView.Adapter<Recycle
 
  protected abstract fun onBindView(holder: RecyclerHolder<B>?, t: T?, position: Int)
 
- fun setData(datas: List<T>) {
+ fun setData(datas: List<T>?) {
   this.datas = datas
   notifyDataSetChanged()
  }

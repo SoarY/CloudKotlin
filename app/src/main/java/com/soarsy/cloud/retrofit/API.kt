@@ -78,5 +78,5 @@ interface API {
      * 豆瓣热映电影，每日更新
      */
     @GET("v2/movie/in_theaters")
-    fun getHotMovie(): Observable<HotMovieBean?>?
+    fun getHotMovie(): Observable<HotMovieBean>
 }
