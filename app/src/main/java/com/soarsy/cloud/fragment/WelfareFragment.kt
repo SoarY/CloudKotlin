@@ -5,14 +5,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
+import com.alibaba.android.arouter.launcher.ARouter
 import com.soarsy.cloud.BR
 import com.soarsy.cloud.R
+import com.soarsy.cloud.activity.ImageActivity
 import com.soarsy.cloud.base.BaseLazyFragment
+import com.soarsy.cloud.constants.RouteConstants
 import com.soarsy.cloud.databinding.FragmentWelfareBinding
 import com.soarsy.cloud.util.CommonUtils
 import com.soarsy.cloud.view.GridSpacingItemDecoration
 import com.soarsy.cloud.view.LoadingView
 import com.soarsy.cloud.vm.WelfareViewModel
+import kotlin.streams.toList
 
 /**
  * NAME：YONG_
@@ -52,7 +56,11 @@ class WelfareFragment : BaseLazyFragment<FragmentWelfareBinding, WelfareViewMode
         mDinding.recyclerView.addItemDecoration(GridSpacingItemDecoration(2, CommonUtils.takeEven(CommonUtils.dip2px(4f))))
 
         mViewModel.adapter.setItemClickListener{
-
+            ARouter.getInstance()
+                .build(RouteConstants.Discover.WELFARE_IMG)
+                .withInt(ImageActivity.POSITION, it)
+                .withStringArrayList(ImageActivity.IMAGE_URLS,mViewModel.datas.stream().map { it.url }.toList() as ArrayList<String>)
+                .navigation()
         }
     }
 

@@ -54,7 +54,7 @@ open class BaseViewModel(application: Application) : AndroidViewModel(applicatio
      *
      * 在Activity销毁时,ViewModel重写此方法释放引用
      */
-    fun onDestroy(){
+    open fun onDestroy(){
 
     }
 }
