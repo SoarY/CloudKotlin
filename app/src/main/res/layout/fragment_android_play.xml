@@ -6,7 +6,7 @@
 
         <variable
             name="vm"
-            type="com.soarsy.cloud.vm.AndroidPlayViewModel" />
+            type="com.soar.cloud.vm.AndroidPlayViewModel" />
     </data>
 
     <ViewSwitcher
@@ -40,7 +40,7 @@
             <include layout="@layout/inc_cloud_footer" />
         </com.scwang.smartrefresh.layout.SmartRefreshLayout>
 
-        <com.soarsy.cloud.view.LoadingView
+        <com.soar.cloud.view.LoadingView
             android:id="@+id/loading_view"
             loadState="@{vm.loadState}"
             android:layout_width="match_parent"

@@ -6,7 +6,7 @@
 
         <variable
             name="vm"
-            type="com.soarsy.cloud.vm.NaviViewModel" />
+            type="com.soar.cloud.vm.NaviViewModel" />
     </data>
 
     <ViewSwitcher
@@ -36,7 +36,7 @@
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
         </LinearLayout>
 
-        <com.soarsy.cloud.view.LoadingView
+        <com.soar.cloud.view.LoadingView
             android:id="@+id/loading_view"
             loadState="@{vm.loadState}"
             android:layout_width="match_parent"

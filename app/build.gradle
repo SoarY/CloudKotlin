@@ -7,7 +7,7 @@ apply plugin: 'kotlin-kapt'
 apply from: "../config.gradle"
 
 android {
-    namespace 'com.soarsy.cloud'
+    namespace 'com.soar.cloud'
     compileSdk build_android.compileSdkVersion
 
     defaultConfig {

@@ -6,7 +6,7 @@
 
         <variable
             name="item"
-            type="com.soarsy.cloud.bean.ArticlesBean" />
+            type="com.soar.cloud.bean.ArticlesBean" />
 
         <import type="android.view.View" />
     </data>

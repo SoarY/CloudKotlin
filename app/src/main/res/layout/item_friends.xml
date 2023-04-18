@@ -5,9 +5,9 @@
 
         <variable
             name="item"
-            type="com.soarsy.cloud.bean.SubjectsBean" />
+            type="com.soar.cloud.bean.SubjectsBean" />
 
-        <import type="com.soarsy.cloud.adapter.FriendsAdapter" />
+        <import type="com.soar.cloud.adapter.FriendsAdapter" />
     </data>
 
     <!--        android:background="?android:attr/selectableItemBackgroundBorderless"-->

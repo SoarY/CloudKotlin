@@ -6,7 +6,7 @@
 
         <variable
             name="vm"
-            type="com.soarsy.cloud.vm.FriendsViewModel" />
+            type="com.soar.cloud.vm.FriendsViewModel" />
     </data>
 
     <ViewSwitcher
@@ -22,7 +22,7 @@
             android:scrollbars="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
-        <com.soarsy.cloud.view.LoadingView
+        <com.soar.cloud.view.LoadingView
             android:id="@+id/loading_view"
             loadState="@{vm.loadState}"
             android:layout_width="match_parent"

@@ -6,7 +6,7 @@
 
         <variable
             name="vm"
-            type="com.soarsy.cloud.vm.AndroidPlayViewModel" />
+            type="com.soar.cloud.vm.AndroidPlayViewModel" />
     </data>
 
     <RelativeLayout

@@ -5,7 +5,7 @@
 
         <variable
             name="vm"
-            type="com.soarsy.cloud.vm.EverydayViewModel" />
+            type="com.soar.cloud.vm.EverydayViewModel" />
     </data>
 
     <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"

@@ -4,7 +4,7 @@
     <data>
         <variable
             name="vm"
-            type="com.soarsy.cloud.vm.ImageViewModel" />
+            type="com.soar.cloud.vm.ImageViewModel" />
     </data>
 
     <LinearLayout
