@@ -1,4 +1,4 @@
-# CloudKt
+# CloudKotlin
 
 [![Apache License 2.0][1]][2]
 [![API][3]][4]
