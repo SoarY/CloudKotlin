@@ -44,12 +44,12 @@ class MainActivity : BaseActivity<ActivityMainBinding, BaseViewModel>() {
         val headBind: LayoutNavigationHeaderBinding? = DataBindingUtil.bind(headerView)
 
         headBind!!.llNavHomepage.setOnClickListener(listener)
-        headBind!!.llNavScanDownload.setOnClickListener(listener)
-        headBind!!.llNavDeedback.setOnClickListener(listener)
-        headBind!!.llNavAbout.setOnClickListener(listener)
-        headBind!!.llNavLogin.setOnClickListener(listener)
-        headBind!!.llNavCollect.setOnClickListener(listener)
-        headBind!!.llNavExit.setOnClickListener(listener)
+        headBind.llNavScanDownload.setOnClickListener(listener)
+        headBind.llNavDeedback.setOnClickListener(listener)
+        headBind.llNavAbout.setOnClickListener(listener)
+        headBind.llNavLogin.setOnClickListener(listener)
+        headBind.llNavCollect.setOnClickListener(listener)
+        headBind.llNavExit.setOnClickListener(listener)
 
         val bottomPagerAdapter = BottomPagerAdapter(supportFragmentManager)
         bottomPagerAdapter.addFragment(MusicFragment.newInstance())

@@ -52,7 +52,7 @@ class FriendsViewModel(application : Application) : BaseViewModel(application){
 
             override fun onNext(t: HotMovieBean) {
                 if (t.subjects!=null)
-                    adapter.setData(t!!.subjects)
+                    adapter.setData(t.subjects)
                 viewState(0,LoadingView.State.done)
             }
 

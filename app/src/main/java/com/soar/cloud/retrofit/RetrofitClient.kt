@@ -25,7 +25,7 @@ object RetrofitClient {
         return getApi(APIMain.API_GANKIO)
     }
 
-    fun getApi(urlMain: String?): API? {
+    fun getApi(urlMain: String): API? {
         if (!apis.containsKey(urlMain)) {
             val retrofit = Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
@@ -33,7 +33,7 @@ object RetrofitClient {
                 .baseUrl(urlMain)
                 .build()
             val api = retrofit.create(API::class.java)
-            apis[urlMain!!] = api
+            apis[urlMain] = api
         }
         return apis[urlMain]
     }
