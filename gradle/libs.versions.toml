@@ -1,0 +1,52 @@
+[versions]
+agp = "8.8.0"
+kotlin = "2.0.0"
+coreKtx = "1.10.1"
+material = "1.5.0"
+androidxAppcompat = "1.4.1"
+constraintlayout = "2.1.3"
+retrofit2 = "2.4.0"
+converterGson = "2.4.0"
+adapterRxjava2 = "2.4.0"
+rxjava = "2.2.0"
+rxandroid = "2.1.0"
+rxlifecycle2 = "2.1.0"
+arouterApi = "1.4.1"
+arouterCompiler = "1.2.2"
+banner = "1.4.10"
+glide = "4.8.0"
+smartRefreshLayout = "1.1.0-alpha-19"
+smartRefreshHeader = "1.1.0-alpha-19"
+bottomNavigationViewEx = "2.0.2"
+flowlayout = "1.1.2"
+photoView = "2.0.0"
+andPermission = "2.0.0-rc12"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+retrofit2 = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit2" }
+conconverterGson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "converterGson" }
+adapterRxjava2 = { group = "com.squareup.retrofit2", name = "adapter-rxjava2", version.ref = "adapterRxjava2" }
+rxjava2 = { group = "io.reactivex.rxjava2", name = "rxjava", version.ref = "rxjava" }
+rxandroid = { group = "io.reactivex.rxjava2", name = "rxandroid", version.ref = "rxandroid" }
+rxlifecycle2 = { group = "com.trello.rxlifecycle2", name = "rxlifecycle-navi", version.ref = "rxlifecycle2" }
+arouterApi = { group = "com.alibaba", name = "arouter-api", version.ref = "arouterApi" }
+arouterCompiler = { group = "com.alibaba", name = "arouter-compiler", version.ref = "arouterCompiler" }
+banner = { group = "com.youth.banner", name = "banner", version.ref = "banner" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+smartRefreshLayout = { group = "com.scwang.smartrefresh", name = "SmartRefreshLayout", version.ref = "smartRefreshLayout" }
+smartRefreshHeader = { group = "com.scwang.smartrefresh", name = "SmartRefreshHeader", version.ref = "smartRefreshHeader" }
+bottomNavigationViewEx = { group = "com.github.ittianyu", name = "BottomNavigationViewEx", version.ref = "bottomNavigationViewEx" }
+flowlayout = { group = "com.hyman", name = "flowlayout-lib", version.ref = "flowlayout" }
+photoView = { group = "com.github.chrisbanes", name = "PhotoView", version.ref = "photoView" }
+andPermission = { group = "com.yanzhenjie", name = "permission", version.ref = "andPermission" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-kapt = { id = "kotlin-kapt" }
+
